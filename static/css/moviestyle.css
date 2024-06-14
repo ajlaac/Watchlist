@@ -1,0 +1,307 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    background-color: #2c3e50;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Search Form Styles */
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    margin: 40px 0; /* Increased margin for space between sections */
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 20px; /* Increased padding */
+    font-size: 1.5em; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px; /* Decreased padding */
+    font-size: 1em;
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Added margin for spacing */
+    align-self: center; /* Center the button below the field */
+}
+
+form input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+/* Search Results Styling */
+/* Search Form Styles */
+.search-form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    margin: 40px 0; /* Increased margin for space between sections */
+}
+
+.search-form input[type="text"] {
+    width: 50%;
+    padding: 10px; /* Increased padding */
+    font-size: 1.5em; /* Increased font size */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.search-form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px; /* Decreased padding */
+    font-size: 1em;
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px; /* Added margin for spacing */
+    align-self: center; /* Center the button below the field */
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+p.nothing {
+    margin-bottom: 30px;
+}
+
+.search-results {
+    display: flex; /* Display movies in a row */
+    flex-wrap: wrap; /* Allow movies to wrap to the next line if necessary */
+    justify-content: center; /* Center movies horizontally */
+}
+
+.movie {
+    flex: 1 1 300px; /* Flexible sizing for responsiveness */
+    max-width: 300px; /* Limit maximum width of each movie */
+    margin: 20px; /* Add some space around each movie */
+}
+
+
+/* Movie item styling */
+.movie {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Increased margin for more space between items */
+    text-align: center; /* Center the movie content */
+}
+
+.movie h2 {
+    font-size: 1.5em; /* Ensure all titles are the same size */
+    margin-bottom: 10px;
+}
+
+.movie p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.movie-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.movie .forms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form.movie-form {
+    display: block;
+    width: 100%; /* Make forms take full width for better alignment */
+}
+
+form.movie-form input[type="submit"] {
+    width: 100%; /* Make the button take full width */
+    padding: 10px 15px;
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+form.movie-form input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+
+
+/* Movies Container Styles */
+.movies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px; /* Added margin to separate sections */
+}
+
+.movie {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.movie h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.movie p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.movie-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.movie .forms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #34495e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3498db;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .movies-container {
+        flex-wrap: wrap; /* Allow wrapping on small screens */
+        justify-content: center; /* Center items */
+    }
+
+    .movie {
+        margin: 10px; /* Adjust margin for better spacing */
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto; /* Center form on small screens */
+    }
+
+    form input[type="text"], form input[type="submit"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

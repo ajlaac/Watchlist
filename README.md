@@ -60,11 +60,7 @@ The application uses a MySQL database with the following tables:
 
 ### HTTP Request Handling
 
-The application adheres to HTTP standards for request handling:
-
-- **GET:** Used for retrieving pages and data (e.g., browsing movies, viewing movie details).
-- **POST:** Used for submitting data (e.g., registration, login, adding a movie).
-- **DELETE:** Used for removing movies from the user's recommendations or watchlist.
+The application adheres to HTTP standards for request handling.
 
 ## Installation and Setup
 

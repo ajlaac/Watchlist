@@ -1,4 +1,4 @@
-# Movie Recommendations Web Application - README
+# Movie Recommendations Web Application
 
 ## Project Overview
 
@@ -84,7 +84,7 @@ The application adheres to HTTP standards for request handling:
    - Update database connection settings in the PHP configuration file (e.g., `config.php`).
 
 5. **Run Application:**
-   - Navigate to the project directory in your browser (e.g., [http://localhost/movie_recommendations](http://localhost/movie_recommendations)).
+   - Navigate to the project directory in your browser (e.g., [http://localhost/movies](http://localhost/movies)).
    - Register a new user or log in with existing credentials to start using the application.
 
 ## Usage
